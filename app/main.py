@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-from app.routes.event_routes import router as event_router
-from app.routes.attendee_routes import router as attendee_router
-from app.database import engine, Base
+from routes.event_routes import router as event_router
+from routes.attendee_routes import router as attendee_router
+from database import engine, Base
 
 #Base.metadata.create_all(bind=engine)
 Base.metadata.create_all(bind=engine)
